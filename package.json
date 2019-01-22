@@ -1,0 +1,11 @@
+{
+  "name": "CapitolCorps",
+  "description": "Nun ya.",
+  "version": "0.0.0",
+  "main": "index.html",
+  "scripts": {},
+  "dependencies": {},
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjbb1221/website.git"
+}
