@@ -1,7 +1,7 @@
 <html>
 <body>
 
-if uname="daytonhudson" then <a href="url">jjbb1221.github.io/capitolcorps/home.html</a>
+Welcome <?php echo $_POST["name"]; ?><br>
 
 </body>
 </html>
