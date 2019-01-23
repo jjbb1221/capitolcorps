@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+form {border: 3px solid white;}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+
+.bg-image {
+  background-image: url("backgroundmap.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: 333;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="login.html">Capitol Corps</a>
+</div>
+
+<div class="alert">
+<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;
+</span>
+<strong>Notice</strong> Login will be required every time you login to prevent unauthorized access.
+</div>
+
+<p align="right"><a href="verify.html"><button type="button" class="block">Security Lockdown</button></a>
+<p align="right"><a href="verify.html"><button type="button" class="block">Shutdown Doors</button></p></a>
+<p align="right"><a href="verify.html"><button type="button" class="block">Shutdown Lights</button></p></a>
+<p align="right"><a href="verify.html"><button type="button" class="block">Close Air Intake</button></p></a>
+<p align="right"><a href="verify.html"><button type="button" class="block">Lock Storage Room</button></p></a>
+
+<p align="center">Search Network Search</p>
+
+<script>
+  (function() {
+    var cx = '005519374031299916355:s2hnpbutjlq';
+    var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    <label>
+  </label>
+</div>
+
+<p align="center" id="demo"></p>
+
+<script>
+    function myFunction() {
+        var x = "Secure Connection Established? " + navigator.onLine;
+        document.getElementById("demo").innerHTML = x;
+    }
+    </script>
+
+<div class="footer">
+  <p align="center"><button onclick="myFunction()">Check Connection</button></p>
+</div>
+
+</body>
+</html>
