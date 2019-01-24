@@ -111,35 +111,24 @@ span.psw {
   </div>
 <form>
 
-<form class="passWord">
-  <input type="passWord" placeholder="Access ID" name="pass1>
+<form>
+    <label for="pswd">AccessID</label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
 </form>
-
-<SCRIPT>
-function passWord() {
-var testV = 1;
-while (testV < 3) {
-if (!pass1) 
-history.go(-1);
-if (pass1.toLowerCase() == "5334118Blue") {
-then
-window.open('https://jjbb1221.github.io/capitolcorps/home.html');
-break;
-} 
-testV+=1;
-var pass1 = 
-<input type="text" placeholder="Invalid AccessID" name="passWord">
-}
-if (pass1.toLowerCase()!="password" & testV ==3) 
-history.go(-1);
-return " ";
-} 
-</SCRIPT>
-<CENTER>
-<FORM>
-<button type="button" onClick="passWord()">Login</button>
-</FORM>
-</CENTER>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="https://jjbb1221.github.io/capitolcorps/home.html";
+        }
+        else{
+            alert("Invalid AccessID");
+        }
+    }
+</script>
 
 </body>
 </html>
