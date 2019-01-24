@@ -112,14 +112,12 @@ span.psw {
 <form>
 
 <form>
-    <label for="pswd">AccessID</label>
-    <input type="password" id="pswd">
+  <p align="center"><input type="password" placeholder="AccessID" id="pswd"></p>
     <input type="button" value="Submit" onclick="checkPswd();" />
 </form>
-<!--Function to check password the already set password is admin-->
 <script type="text/javascript">
     function checkPswd() {
-        var confirmPassword = "admin";
+        var confirmPassword = "5334118Blue";
         var password = document.getElementById("pswd").value;
         if (password == confirmPassword) {
              window.location="https://jjbb1221.github.io/capitolcorps/home.html";
