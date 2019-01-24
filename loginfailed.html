@@ -126,14 +126,22 @@ span.psw {
   </div>
 <form>
 
-<form action="/action_page.php">
-  <div class="container">
-    <p align="center"><input type="text" placeholder="Access ID" name="uname" required></p>
-
-    <p align="center"><button type="submit">Login</button></p>
-    <label>
-  </div>
+<form>
+  <p align="center"><input type="password" placeholder="AccessID" id="pswd"></p>
+  <button type="Submit" value="Submit" onclick="checkPswd();" /Submit</button>
 </form>
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "5334118Blue";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="https://jjbb1221.github.io/capitolcorps/home.html";
+        }
+        else{
+             window.location="https://jjbb1221.github.io/capitolcorps/accessdenied1.html";
+        }
+    }
+</script>
 
 </body>
 </html>
