@@ -1,0 +1,15 @@
+{
+  "name": "capitolcorps",
+  "description": "website.",
+  "version": "0.0.0",
+  "engines": {
+    "node": "8.9.x",
+    "npm": "5.7.1"
+  },
+  "main": "index.html",
+  "scripts": {
+    "start": "node index.html"
+  },
+  "dependencies": {
+  }
+}
