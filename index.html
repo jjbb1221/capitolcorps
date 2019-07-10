@@ -117,11 +117,15 @@ span.psw {
 </form>
 <script type="text/javascript">
     function checkPswd() {
-        var confirmPassword = "5334118Blue";
+        var accessid1 = "5334118";
+        var accessid2 = "";
+        var redirect = "https://jjbb1221.github.io/capitolcorps/home.html"
         var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {
-             window.location="https://jjbb1221.github.io/capitolcorps/home.html";
+        if (password == accessid1) {
+             window.location="redirect";
         }
+        if (password == accessid2) {
+             window.location="redirect";
         else{
              alert("AccessID is incorrect");
         }
